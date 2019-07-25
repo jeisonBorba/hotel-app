@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="App">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafio hotel</title>
+
+	<link rel="stylesheet" href="/bower_components/font-awesome-bower/css/font-awesome.css" />
+	<link rel="stylesheet" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+	<link rel="stylesheet"
+		href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+	<link rel="stylesheet" href="styles/main.css">
+
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body ng-controller="MainController as vm">
+
+	<nav class="nav navbar navbar-default navbar-desafio">
+		<img class="navbar-brand" src="./images/logo-desktop.svg" alt="logo-desktop.svg">
+		<div class="navbar-brand">
+			<i class="fa fa-bars text-white"></i>
+		</div>
+	</nav>
+
+	<div class="content">
+		<div class="panel">
+			<div class="panel-body">
+
+				<!-- Router -->
+				<div ui-view="conteudo"></div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-smart-table/dist/smart-table.js"></script>
+	<script src="/bower_components/moment/moment.js"></script>
+	<script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+	<script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="/bower_components/angular-locale-pt-br/angular-locale_pt-br.js"></script>
+	<script src="/bower_components/angular-ui-mask/dist/mask.js"></script>
+	<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<script src="app.js"></script>
+	<script src="mainController.js"></script>
+	<script src="directives/datetimepicker/datetimepicker.directive.js"></script>
+	<script src="checkin/checkin.controller.js"></script>
+	<script src="checkin/checkin.service.js"></script>
+	<script src="hospede/hospede.controller.js"></script>
+	<script src="hospede/hospede.service.js"></script>
+	<script src="services/mensagem.service.js"></script>
+</body>
+
+</html>
