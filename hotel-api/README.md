@@ -20,9 +20,9 @@ PostgreSQl
 
 A step by step series of examples that tell you have to get a development env running
 
-*Clone project into your enviroment
-*mvn clean install -DskipTests
-*mvn spring-boot:run
+* Clone project into your enviroment
+* mvn clean install -DskipTests
+* mvn spring-boot:run
 
 
 ### Scripts
